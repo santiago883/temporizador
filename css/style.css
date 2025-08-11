@@ -1,0 +1,83 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  background-color: #1C1C1C;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cronometro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cronometro > h2{
+  font-size: 100px;
+  color: #5F03C2;
+  align-items: center;
+  
+}
+
+.numbers{
+  border: none;
+  color: white;
+  font-weight: 400;
+  background-color: transparent;
+  caret-color: white;
+  font-family: "roboto mono";
+  
+}
+.numbers::placeholder{
+  
+  color: white;
+  font-weight: 400;
+  font-family: "Orbitron";
+  background-color: transparent;
+  border: none;
+
+}
+
+
+input[type="number"]{
+  width: 220px;
+  font-size: 120px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  font-family: "Orbitron";
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+  
+}
+
+
+#pause{
+  display: none;
+}
+
+.container_util{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.util{
+  margin: 0 20px;
+  cursor: pointer;
+}
+
